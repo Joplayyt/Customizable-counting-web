@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Counting Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Customizable Counting Website</h1>
+    <label for="number">Enter a number to count up to:</label>
+    <input type="number" id="number" min="1" placeholder="e.g., 10">
+    <label for="delay">Enter delay (ms or s):</label>
+    <input type="text" id="delay" placeholder="e.g., 1000 or 1s">
+    <button onclick="startCounting()">Start Counting</button>
+    <div id="output"></div>
+
+    <h2>Customize Style</h2>
+    <form id="style-form">
+        <label for="background-color">Background Color:</label>
+        <input type="color" id="background-color" name="background-color" value="#f0f8ff"><br>
+        
+        <label for="primary-color">Primary Text Color:</label>
+        <input type="color" id="primary-color" name="primary-color" value="#4caf50"><br>
+        
+        <label for="secondary-color">Secondary Text Color:</label>
+        <input type="color" id="secondary-color" name="secondary-color" value="#ff5722"><br>
+        
+        <label for="button-color">Button Color:</label>
+        <input type="color" id="button-color" name="button-color" value="#008cba"><br>
+        
+        <label for="button-hover-color">Button Hover Color:</label>
+        <input type="color" id="button-hover-color" name="button-hover-color" value="#005f5f"><br>
+        
+        <label for="font-size">Font Size (px):</label>
+        <input type="number" id="font-size" name="font-size" min="10" value="18"><br>
+        
+        <button type="button" onclick="applyStyles()">Apply Styles</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

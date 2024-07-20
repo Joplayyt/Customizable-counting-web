@@ -1,0 +1,54 @@
+:root {
+    --background-color: #f0f8ff;
+    --primary-color: #4caf50;
+    --secondary-color: #ff5722;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 18px;
+    --button-color: #008cba;
+    --button-hover-color: #005f5f;
+    --input-border-color: #ccc;
+    --input-focus-border-color: #66afe9;
+    --output-font-size: 75px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: var(--primary-color);
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    font-size: var(--font-size);
+}
+
+input:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#output {
+    font-size: var(--output-font-size);
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
